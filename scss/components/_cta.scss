@@ -5,4 +5,23 @@
 .cta__container {
     @include section-container;
     padding-block: 10.5rem;
+
+    display: flex;
+    gap: 32rem;
+}
+.cta__heading {
+    margin-bottom: 2rem;
+}
+.cta__paragraph {
+    color: $clr-testimonial-shadow;
+}
+.cta-form {
+    width: 100%;
+    &__email-input {
+        display: block;
+        width: 90%;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 0.25rem;
+    }
 }

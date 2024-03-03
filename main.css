@@ -96,6 +96,18 @@ body {
   font-size: 0.9rem;
 }
 
+.cta__heading {
+  font-size: 3.2rem;
+}
+
+.cta__paragraph {
+  font-size: 1.5rem;
+}
+
+.cta-form__submit-btn {
+  font-size: 1.4rem;
+}
+
 .header__container {
   max-width: 89%;
   margin-inline: auto;
@@ -300,6 +312,27 @@ body {
   max-width: 89%;
   margin-inline: auto;
   padding-block: 10.5rem;
+  display: flex;
+  gap: 32rem;
+}
+
+.cta__heading {
+  margin-bottom: 2rem;
+}
+
+.cta__paragraph {
+  color: hsl(0, 0%, 75%);
+}
+
+.cta-form {
+  width: 100%;
+}
+.cta-form__email-input {
+  display: block;
+  width: 90%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.25rem;
 }
 
 .footer {
@@ -312,6 +345,13 @@ body {
   border: 0;
   padding: 12px;
   border-radius: 0.25rem;
+}
+
+.cta-form__submit-btn {
+  border: 0;
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  padding: 10px 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
