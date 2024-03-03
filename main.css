@@ -1,3 +1,178 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  background-color: hsl(240, 75%, 98%);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+html {
+  font-family: "Open Sans", "sans-serif";
+}
+
+h1,
+h2,
+h3,
+.cta__form,
+.header__navigation {
+  font-family: "Raleway", "sans-serif";
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.hero__heading {
+  font-size: 4rem;
+}
+
+.hero__paragraph {
+  font-size: 1.8rem;
+  line-height: 1.25;
+}
+
+.hero-cta__submit-btn {
+  font-size: 1.4rem;
+}
+
+.header__container {
+  max-width: 89%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6.5rem;
+  padding-bottom: 8rem;
+}
+
+.header__logo-container {
+  max-width: 180px;
+}
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 5.7rem;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: black;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.hero__container {
+  max-width: 89%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    flex-direction: row-reverse;
+  }
+}
+
+.hero__content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__content-container {
+    max-width: 88%;
+    height: 100%;
+  }
+}
+
+.hero-cta {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.hero-cta .hero-cta__email-input,
+.hero-cta .hero-cta__submit-btn {
+  flex: 1;
+}
+@media screen and (min-width: 768px) {
+  .hero-cta {
+    flex-direction: row;
+  }
+  .hero-cta .hero-cta__email-input {
+    flex: unset;
+    width: 53%;
+  }
+  .hero-cta .hero-cta__submit-btn {
+    flex: unset;
+    width: 33%;
+  }
+}
+
+.hero-cta__email-input {
+  border: 1px solid black;
+}
+
+.cta {
+  background-color: hsl(238, 22%, 44%);
+}
+
+.footer {
+  background-color: hsl(243, 87%, 12%);
+}
+
+.hero-cta__submit-btn {
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  border: 0;
+  padding: 12px;
+}
 
 /*# sourceMappingURL=main.css.map */

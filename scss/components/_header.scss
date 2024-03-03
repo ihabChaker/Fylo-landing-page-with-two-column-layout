@@ -1,0 +1,26 @@
+.header__container {
+    @include section-container;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6.5rem;
+    padding-bottom: 8rem;
+}
+
+.header__logo-container {
+    max-width: 180px;
+}
+
+.navigation__list {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    gap: 5.7rem;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: black;
+}

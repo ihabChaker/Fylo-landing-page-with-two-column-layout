@@ -1,8 +1,4 @@
-$column-gap: 3rem;
-$row-gap: 3rem;
-$icons: (
-    "todo": url("../../images/icon-todo.svg"),
-    "reminder": url("../../images/icon-reminders.svg"),
-    "planning": url("../../images/icon-planning.svg"),
-    "calendar": url("../../images/icon-calendar.svg")
-);
+$breakpoint-s: 480px;
+$breakpoint-m: 768px;
+$breakpoint-l: 1024px;
+$breakpoint-xl: 1200px;
