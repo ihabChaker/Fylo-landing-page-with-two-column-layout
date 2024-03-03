@@ -1,3 +1,8 @@
 .cta {
     background-color: $bg-cta;
+    color: white;
+}
+.cta__container {
+    @include section-container;
+    padding-block: 10.5rem;
 }
