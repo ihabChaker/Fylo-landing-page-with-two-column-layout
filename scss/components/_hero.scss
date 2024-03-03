@@ -1,5 +1,5 @@
 .hero {
-    height: 100vh;
+    height: 80vh;
 }
 .hero__container {
     @include section-container;
@@ -47,4 +47,5 @@
 
 .hero-cta__email-input {
     border: 1px solid black;
+    border-radius: 0.25rem;
 }

@@ -1,0 +1,24 @@
+.features-and-testimonial {
+    background-color: $bg-features-and-testimonial;
+}
+.features-and-testimonial__container {
+    @include section-container;
+    display: flex;
+}
+
+.testimonial-author__avatar-container {
+    max-width: 40px;
+}
+.curve-container {
+    height: 15vh;
+    width: 100vw;
+
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/images/bg-curve-desktop.svg);
+    @media screen and (min-width: $breakpoint-m) {
+        background-image: url(/images/bg-curve-mobile.svg);
+    }
+}
