@@ -339,6 +339,17 @@ body {
   background-color: hsl(243, 87%, 12%);
 }
 
+.footer__content-container {
+  max-width: 89%;
+  margin-inline: auto;
+  padding-top: 10rem;
+}
+
+.footer__content-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .hero-cta__submit-btn {
   background-color: hsl(224, 93%, 58%);
   color: white;
