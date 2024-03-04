@@ -339,15 +339,80 @@ body {
   background-color: hsl(243, 87%, 12%);
 }
 
+.company-contact,
+.footer__navigation-link,
+.fa-brands {
+  color: hsl(0, 0%, 75%);
+}
+
 .footer__content-container {
   max-width: 89%;
   margin-inline: auto;
   padding-top: 10rem;
+  padding-bottom: 8rem;
 }
 
-.footer__content-container {
+.footer__grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__socials-list,
+.footer__navigation-list {
+  list-style-type: none;
+}
+
+.footer__navigation-link,
+.footer__social-link {
+  text-decoration: none;
+}
+
+.footer__logo-container {
+  margin-bottom: 2rem;
+}
+
+.company-contact__infos-container .company-contact__info:first-child {
+  margin-bottom: 2rem;
+}
+
+.company-contact__info::before {
+  padding-right: 12px;
+}
+
+.company-contact__info[data-icon=email]::before {
+  content: url(/images/icon-email.svg);
+}
+
+.company-contact__info[data-icon=phone]::before {
+  content: url(/images/icon-phone.svg);
+}
+
+.footer__navigation-list {
+  padding-left: 6rem;
+}
+
+.footer__navigation-item {
+  margin-bottom: 1rem;
+}
+
+.footer__socials-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+.footer__social-link i {
+  padding: 10px;
+  display: block;
+  border: 1px solid hsl(0, 0%, 75%);
+  border-radius: 50%;
 }
 
 .hero-cta__submit-btn {
