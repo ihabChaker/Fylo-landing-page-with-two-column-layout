@@ -4,8 +4,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 6.5rem;
-    padding-bottom: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 18rem;
+    @media screen and (min-width: $breakpoint-l) {
+        padding-bottom: 8rem;
+        padding-top: 6.5rem;
+    }
 }
 
 .header__logo-container {

@@ -5,6 +5,10 @@
 .features-and-testimonial__container {
     @include section-container;
     display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $breakpoint-m) {
+        flex-direction: row-reverse;
+    }
     gap: 3rem;
     padding-bottom: 10rem;
 }
@@ -25,6 +29,10 @@
 
 .features__heading {
     margin-bottom: 3rem;
+    text-align: center;
+    @media screen and (min-width: $breakpoint-m) {
+        text-align: initial;
+    }
 }
 .features__paragraph {
     @media screen and (min-width: $breakpoint-l) {
@@ -60,7 +68,9 @@
     margin-bottom: 4rem;
 }
 .features-and-testimonial__image-container {
-    max-width: 38vw;
+    @media screen and (min-width: $breakpoint-m) {
+        max-width: 38vw;
+    }
 }
 .testimonial {
     width: 90%;

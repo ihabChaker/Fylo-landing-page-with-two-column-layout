@@ -7,7 +7,16 @@
     padding-block: 10.5rem;
 
     display: flex;
-    gap: 32rem;
+    flex-direction: column;
+    gap: 4rem;
+    @media screen and (min-width: $breakpoint-m) {
+        flex-direction: row;
+        gap: 32rem;
+    }
+    text-align: center;
+    @media screen and (min-width: $breakpoint-m) {
+        text-align: initial;
+    }
 }
 .cta__heading {
     margin-bottom: 2rem;
