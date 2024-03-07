@@ -63,7 +63,7 @@ body {
 }
 
 .header .navigation__link {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 @media screen and (min-width: 750px) {
   .header .navigation__link {
@@ -159,12 +159,13 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .header__container {
-    padding-bottom: 8rem;
+    padding-bottom: 11.8rem;
     padding-top: 6.5rem;
   }
 }
 
 .header__logo-container {
+  min-width: 80px;
   max-width: 180px;
 }
 
@@ -172,7 +173,17 @@ body {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 5.7rem;
+  gap: 1rem;
+}
+@media screen and (min-width: 480px) {
+  .navigation__list {
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    gap: 5.7rem;
+  }
 }
 
 .navigation__link {
@@ -181,7 +192,7 @@ body {
 }
 
 .hero {
-  height: 62vh;
+  min-height: 62vh;
 }
 
 .hero__container {
@@ -399,14 +410,40 @@ body {
 }
 
 .cta-form {
-  width: 100%;
+  width: 80%;
+  margin-inline: auto;
 }
+@media screen and (min-width: 768px) {
+  .cta-form {
+    margin-inline: unset;
+    width: 100%;
+  }
+}
+
 .cta-form__email-input {
   display: block;
-  width: 90%;
-  padding: 1rem;
   margin-bottom: 2rem;
+  width: 100%;
+  padding: 1rem;
   border-radius: 0.25rem;
+}
+@media screen and (min-width: 768px) {
+  .cta-form__email-input {
+    width: 90%;
+  }
+}
+
+.cta-form__submit-btn {
+  border: 0;
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .cta-form__submit-btn {
+    width: auto;
+  }
 }
 
 .footer {
@@ -429,9 +466,11 @@ body {
 .footer__grid-container {
   display: grid;
   grid-auto-flow: row;
+  gap: 4rem;
 }
 @media screen and (min-width: 768px) {
   .footer__grid-container {
+    gap: unset;
     grid-auto-flow: unset;
     grid-template-columns: repeat(4, 1fr);
   }
@@ -468,7 +507,12 @@ body {
 }
 
 .footer__navigation-list {
-  padding-left: 6rem;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .footer__navigation-list {
+    padding-left: 6rem;
+  }
 }
 
 .footer__navigation-item {
@@ -478,6 +522,12 @@ body {
 .footer__socials-list {
   display: flex;
   gap: 1rem;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__socials-list {
+    justify-content: initial;
+  }
 }
 
 .footer__social-link {
@@ -501,13 +551,6 @@ body {
   border: 0;
   padding: 12px;
   border-radius: 0.25rem;
-}
-
-.cta-form__submit-btn {
-  border: 0;
-  background-color: hsl(224, 93%, 58%);
-  color: white;
-  padding: 10px 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

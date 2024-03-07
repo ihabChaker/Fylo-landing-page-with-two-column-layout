@@ -7,12 +7,13 @@
     padding-top: 5rem;
     padding-bottom: 18rem;
     @media screen and (min-width: $breakpoint-l) {
-        padding-bottom: 8rem;
+        padding-bottom: 11.8rem;
         padding-top: 6.5rem;
     }
 }
 
 .header__logo-container {
+    min-width: 80px;
     max-width: 180px;
 }
 
@@ -21,7 +22,14 @@
 
     display: flex;
     flex-direction: row;
-    gap: 5.7rem;
+    gap: 1rem;
+
+    @media screen and (min-width: $breakpoint-s) {
+        gap: 2rem;
+    }
+    @media screen and (min-width: $breakpoint-m) {
+        gap: 5.7rem;
+    }
 }
 
 .navigation__link {

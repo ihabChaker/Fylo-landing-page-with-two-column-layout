@@ -1,5 +1,5 @@
 .hero {
-    height: 62vh;
+    min-height: 62vh;
 }
 .hero__container {
     @include section-container;

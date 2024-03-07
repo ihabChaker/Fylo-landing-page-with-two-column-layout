@@ -15,7 +15,9 @@
 .footer__grid-container {
     display: grid;
     grid-auto-flow: row;
+    gap: 4rem;
     @media screen and (min-width: $breakpoint-m) {
+        gap: unset;
         grid-auto-flow: unset;
         grid-template-columns: repeat(4, 1fr);
     }
@@ -50,7 +52,10 @@
     content: url(/images/icon-phone.svg);
 }
 .footer__navigation-list {
-    padding-left: 6rem;
+    padding: 0;
+    @media screen and (min-width: $breakpoint-m) {
+        padding-left: 6rem;
+    }
 }
 .footer__navigation-item {
     margin-bottom: 1rem;
@@ -58,6 +63,10 @@
 .footer__socials-list {
     display: flex;
     gap: 1rem;
+    justify-content: center;
+    @media screen and (min-width: $breakpoint-m) {
+        justify-content: initial;
+    }
 }
 
 .footer__social-link {
@@ -69,8 +78,6 @@
     padding: 10px;
     i {
         padding: 10px;
-        // height: 50px;
-        // width: 50px;
         display: block;
         border: 1px solid $clr-testimonial-shadow;
         border-radius: 50%;

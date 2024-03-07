@@ -23,12 +23,30 @@
 }
 
 .cta-form {
+    width: 80%;
+    margin-inline: auto;
+    @media screen and (min-width: $breakpoint-m) {
+        margin-inline: unset;
+        width: 100%;
+    }
+}
+.cta-form__email-input {
+    display: block;
+    margin-bottom: 2rem;
     width: 100%;
-    &__email-input {
-        display: block;
+    @media screen and (min-width: $breakpoint-m) {
         width: 90%;
-        padding: 1rem;
-        margin-bottom: 2rem;
-        border-radius: 0.25rem;
+    }
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+.cta-form__submit-btn {
+    border: 0;
+    background-color: $bg-cta-btn;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    @media screen and (min-width: $breakpoint-m) {
+        width: auto;
     }
 }
