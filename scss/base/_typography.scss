@@ -26,16 +26,25 @@ body {
 }
 .hero__paragraph {
     font-size: 1.8rem;
+    @media screen and (min-width: $breakpoint-m) {
+        font-size: 2.4rem;
+    }
     line-height: 1.25;
 }
 .hero-cta__submit-btn {
     font-size: 1.4rem;
 }
 .features__heading {
-    font-size: 4rem;
+    font-size: 2rem;
+    @media screen and (min-width: $breakpoint-m) {
+        font-size: 4rem;
+    }
 }
 .features__paragraph {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    @media screen and (min-width: $breakpoint-m) {
+        font-size: 1.4rem;
+    }
 }
 .testimonial__text {
     font-size: 1.4rem;
@@ -49,9 +58,15 @@ body {
 }
 .cta__heading {
     font-size: 3.2rem;
+    @media screen and (min-width: $breakpoint-m) {
+        font-size: 2.6rem;
+    }
 }
 .cta__paragraph {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    @media screen and (min-width: $breakpoint-m) {
+        font-size: 1.5rem;
+    }
 }
 .cta-form__submit-btn {
     font-size: 1.4rem;
