@@ -1,3 +1,9 @@
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden;
+}
+
 *,
 *::before,
 *::after {

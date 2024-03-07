@@ -2,3 +2,9 @@ $breakpoint-s: 480px;
 $breakpoint-m: 768px;
 $breakpoint-l: 1024px;
 $breakpoint-xl: 1200px;
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+    visibility: hidden;
+}
